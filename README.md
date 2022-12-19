@@ -4,4 +4,4 @@
 
 <img src='github_media/Снимок экрана 2022-12-19 в 19.16.25.png' height="465"> <img src='github_media/Снимок экрана 2022-12-19 в 19.17.06.png' height="465">
 <img src='github_media/Снимок экрана 2022-12-19 в 19.16.41.png' height="650">
-<img src='github_media/Снимок экрана 2022-12-19 в 19.17.25.png' height="602"> <img src='github_media/Снимок экрана 2022-12-19 в 19.17.36.png' height="598">
+<img src='github_media/Снимок экрана 2022-12-19 в 19.17.25.png' height="601"> <img src='github_media/Снимок экрана 2022-12-19 в 19.17.36.png' height="599">
