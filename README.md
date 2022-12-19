@@ -3,4 +3,4 @@
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/green?icon=github)](https://github.com/Naereen/badges/)
 
 <img src='github_media/Снимок экрана 2022-12-19 в 19.16.25.png' height="465"> <img src='github_media/Снимок экрана 2022-12-19 в 19.17.06.png' height="465">
-<img src='github_media/Снимок экрана 2022-12-19 в 19.16.41.png' height="570"><img src='github_media/Снимок экрана 2022-12-19 в 19.17.25.png' height="600"> <img src='github_media/Снимок экрана 2022-12-19 в 19.17.36.png' height="600">
+<img src='github_media/Снимок экрана 2022-12-19 в 19.16.41.png' height="575"><img src='github_media/Снимок экрана 2022-12-19 в 19.17.25.png' height="600"> <img src='github_media/Снимок экрана 2022-12-19 в 19.17.36.png' height="600">
