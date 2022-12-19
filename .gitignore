@@ -3,4 +3,4 @@ django_cache
 /media
 db.sqlite3
 .idea
-/__pycache__git
+/__pycache__
