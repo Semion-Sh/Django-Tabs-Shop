@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+songs
+{% endblock %}
+{% block body %}
+    <style>
+        .py-5 a:link {
+            color: grey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .py-5 a:visited {
+            color: grey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .py-5 a:hover {
+            color: dimgrey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .py-5 a:active {
+            color: grey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+<main>
+    <section class="py-5 text-center container">
+        <h1 class="fw-light">TABS SHOP</h1>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    {% for i in songs %}
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <a href="/tab/{{ i.guitar_tabs_id }}"><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static i.photo %}" role="img" aria-label="Placeholder: Hillsong United - Oceans" ><rect width="100%" height="100%" fill="#55595c"></rect><text ><h1>{{ i.title.upper }}</h1></text></a>
+                                <div class="card-body">
+                                    <p class="card-text">Stream Hillsong United - Oceans | SHORT EDIT by Felix Fischer | Listen online for free on SoundCloud</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <input type="button" onclick="location.href='/tab/{{ i.guitar_tabs_id }}';" value="view"  class="btn btn-sm btn-outline-secondary"/>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">buy</button>
+                                        </div>
+                                        <small class="text-muted">{{ i.price }}$</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {%  endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

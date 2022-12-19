@@ -1,0 +1,145 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album-rtl/">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+
+    <style>
+        a {
+        text-decoration: none;
+      }
+
+        #registers_buttons{
+            margin-left: 950px;
+        }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+    <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About as</h4>
+            <p class="text-muted">My name is Semion. I'm a guitar player. I hope this helps you</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact with me</h4>
+            <ul class="list-unstyled">
+                <li><a href="https://www.instagram.com/semion_sh/" class="text-white">Follow me on Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100041726062242" class="text-white">Like me on Facebook</a></li>
+                <li><a href="mailto:semion.shandruk@gmail.com" class="text-white">Email me</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+        <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg>
+            <strong>Tabs</strong>
+        </a>
+            <div id="registers_buttons">
+                <a  href="/sign-up" class="btn btn-primary my-2">sign up</a>
+                <a  href="/login" class="btn btn-secondary my-2">log in</a>
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="تبديل التنقل">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+    </header>
+</head>
+<body>
+{% block body %}{% endblock %}    <style>
+        .footer a:link {
+            color: grey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .footer a:visited {
+            color: grey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: dimgrey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .footer a:active {
+            color: grey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+    <footer class="text-muted py-5 footer">
+    <div class="container">
+        <p class="float-end mb-1"><a href="/">| main page</a></p>
+        <p class="float-end mb-1"><a href="/feedback">write a feedback | </a></p>
+        <p class="mb-1"><span>&#169; 2022 License, Semion Shandruk. All rights reserved</span></p>
+    </div>
+    </footer>
+<script src="/static/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

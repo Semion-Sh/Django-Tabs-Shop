@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block body %}
+
+        <img src="{% static photo %}" width="300px" alt="image"/>
+        <h1>{{ title }}</h1>
+        {% for i in tab %}
+            {% if i == '|' %}
+                <br>
+                {% else %}
+                {{ i }}
+            {% endif %}
+        {% endfor %}
+{% endblock %}
